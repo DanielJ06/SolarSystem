@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SolarSystem</string>
+    <string name="welcome_title">Aperte o cinto</string>
+    <string name="start_your_journey">Comece sua jornada pelo sistema solar.</string>
+</resources>
