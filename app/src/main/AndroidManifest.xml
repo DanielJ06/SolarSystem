@@ -12,13 +12,15 @@
         <activity
             android:name=".welcome.presentation.MainActivity"
             android:label="@string/title_activity_main"
-            android:theme="@style/Theme.SolarSystem.NoActionBar"></activity>
-        <activity android:name=".welcome.presentation.WelcomeActivity">
+            android:theme="@style/Theme.SolarSystem.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".welcome.presentation.WelcomeActivity">
+
         </activity>
     </application>
 
