@@ -22,4 +22,5 @@
     <string name="hello">Olá, Daniel</string>
     <string name="learn_today">O que você vai aprender hoje?</string>
     <string name="search_hint">Procure planetas, asteroides, estrelas</string>
+    <string name="category">Categorias</string>
 </resources>
