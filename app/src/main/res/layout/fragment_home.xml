@@ -71,7 +71,7 @@
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_bookmark" />
+            app:srcCompat="@drawable/ic_planets" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
@@ -97,12 +97,12 @@
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_bookmark" />
+            app:srcCompat="@drawable/ic_asteroids" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Planetas"
+            android:text="@string/asteroids"
             android:textColor="@color/white"
             android:textSize="14sp" />
 
@@ -123,12 +123,12 @@
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_bookmark" />
+            app:srcCompat="@drawable/ic_stars" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Planetas"
+            android:text="@string/stars"
             android:textColor="@color/white"
             android:textSize="14sp" />
 
@@ -148,12 +148,12 @@
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_bookmark" />
+            app:srcCompat="@drawable/ic_galaxies" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Planetas"
+            android:text="@string/galaxies"
             android:textColor="@color/white"
             android:textSize="14sp" />
 
