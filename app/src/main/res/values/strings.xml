@@ -26,4 +26,6 @@
     <string name="asteroids">Asteroides</string>
     <string name="stars">Estrelas</string>
     <string name="galaxies">Galáxias</string>
+    <string name="planet">Planet</string>
+    <string name="planets">Planetas</string>
 </resources>

@@ -37,8 +37,8 @@
         android:background="@drawable/edit_text_custom_bg"
         android:drawableStart="@drawable/ic_search"
         android:drawablePadding="16dp"
-        android:padding="15dp"
         android:hint="@string/search_hint"
+        android:padding="15dp"
         android:textColor="@color/grayText"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -158,5 +158,25 @@
             android:textSize="14sp" />
 
     </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/planets_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/planets"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/planets_category" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/planets_subtitle"
+        tools:itemCount="3"
+        tools:listitem="@layout/small_planet_card" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
