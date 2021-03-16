@@ -1,11 +1,8 @@
-package com.danieljrodrigues.solarsystem.welcome.presentation
+package com.danieljrodrigues.solarsystem.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.navigation.Navigation
-import androidx.navigation.findNavController
-import com.danieljrodrigues.solarsystem.R
 import com.danieljrodrigues.solarsystem.databinding.ActivityWelcomeBinding
 
 class WelcomeActivity : AppCompatActivity() {

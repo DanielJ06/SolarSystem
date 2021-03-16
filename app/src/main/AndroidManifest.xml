@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SolarSystem">
 
-        <activity android:name=".welcome.presentation.WelcomeActivity">
+        <activity android:name=".ui.WelcomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,7 +19,7 @@
         </activity>
 
         <activity
-            android:name=".welcome.presentation.MainActivity"
+            android:name=".ui.MainActivity"
             android:label="@string/title_activity_main"
             android:theme="@style/Theme.SolarSystem.NoActionBar" />
     </application>

@@ -1,4 +1,4 @@
-package com.danieljrodrigues.solarsystem.welcome.presentation
+package com.danieljrodrigues.solarsystem.ui.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,18 +6,18 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.danieljrodrigues.solarsystem.R
-import com.danieljrodrigues.solarsystem.databinding.FragmentSearchBinding
+import com.danieljrodrigues.solarsystem.databinding.FragmentBookmarkBinding
 
-class SearchFragment : Fragment() {
+class BookMarkFragment : Fragment() {
 
-    private var _binding: FragmentSearchBinding? = null
+    private var _binding: FragmentBookmarkBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentSearchBinding.inflate(inflater, container, false)
+        _binding = FragmentBookmarkBinding.inflate(inflater, container, false)
 
         return binding.root
     }

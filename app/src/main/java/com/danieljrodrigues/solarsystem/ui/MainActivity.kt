@@ -1,4 +1,4 @@
-package com.danieljrodrigues.solarsystem.welcome.presentation
+package com.danieljrodrigues.solarsystem.ui
 
 import android.os.Bundle
 import com.google.android.material.floatingactionbutton.FloatingActionButton
