@@ -37,8 +37,9 @@ class HomeFragment : Fragment() {
         val data: ArrayList<Card> = ArrayList()
         data.add(Card( 1, "Terra"))
         data.add(Card( 2, "Marte"))
-        data.add(Card( 1, "Vênus"))
-        data.add(Card( 1, "Saturno"))
+        data.add(Card( 3, "Vênus"))
+        data.add(Card( 4, "Saturno"))
+        data.add(Card(5, "Daniel"))
         mAdapter.setData(data)
     }
 

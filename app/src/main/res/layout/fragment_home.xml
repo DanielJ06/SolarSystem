@@ -3,187 +3,205 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:scrollbars="none"
     android:layout_height="match_parent"
     android:background="@color/black"
+    android:scrollbars="none"
     tools:context=".ui.fragments.HomeFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:padding="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello"
-        android:textColor="@color/white"
-        android:textSize="32sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/learn_today"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <androidx.appcompat.widget.AppCompatEditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:background="@drawable/edit_text_custom_bg"
-        android:drawableStart="@drawable/ic_search"
-        android:drawablePadding="16dp"
-        android:hint="@string/search_hint"
-        android:padding="15dp"
-        android:textColor="@color/grayText"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/categories_subtitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="@string/category"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
-
-    <LinearLayout
-        android:id="@+id/planets_category"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="25dp"
-        android:background="@drawable/gradient_blue"
-        android:gravity="center"
-        android:orientation="vertical"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/categories_subtitle"
-        app:layout_constraintTop_toBottomOf="@+id/categories_subtitle">
-
-        <androidx.appcompat.widget.AppCompatImageView
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_planets" />
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/hello"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Planetas"
+            android:text="@string/learn_today"
             android:textColor="@color/white"
-            android:textSize="14sp" />
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/asteroids_category"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:background="@drawable/gradient_pink"
-        android:gravity="center"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toStartOf="@id/starts_category"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@id/planets_category"
-        app:layout_constraintTop_toTopOf="@+id/planets_category">
-
-        <androidx.appcompat.widget.AppCompatImageView
-            android:layout_width="wrap_content"
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_asteroids" />
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/edit_text_custom_bg"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="16dp"
+            android:hint="@string/search_hint"
+            android:padding="15dp"
+            android:textColor="@color/grayText"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
         <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/categories_subtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/asteroids"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/category"
             android:textColor="@color/white"
-            android:textSize="14sp" />
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/starts_category"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:background="@drawable/gradient_cyan"
-        android:gravity="center"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toStartOf="@id/galaxies_category"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@id/asteroids_category"
-        app:layout_constraintTop_toTopOf="@+id/galaxies_category">
-
-        <androidx.appcompat.widget.AppCompatImageView
-            android:layout_width="wrap_content"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/categories_container"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_stars" />
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="25dp"
+            app:layout_constraintStart_toStartOf="@+id/categories_subtitle"
+            app:layout_constraintTop_toBottomOf="@+id/categories_subtitle">
+
+            <LinearLayout
+                android:id="@+id/planets_category"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/gradient_blue"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_planets" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Planetas"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/asteroids_category"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/gradient_pink"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@id/starts_category"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@id/planets_category"
+                app:layout_constraintTop_toTopOf="@+id/planets_category">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_asteroids" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/asteroids"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/starts_category"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/gradient_cyan"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@id/galaxies_category"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@id/asteroids_category"
+                app:layout_constraintTop_toTopOf="@+id/galaxies_category">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_stars" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stars"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/galaxies_category"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/gradient_yellow"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintTop_toTopOf="@+id/planets_category">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_galaxies" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/galaxies"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/planets_subtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/stars"
+
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/planets"
             android:textColor="@color/white"
-            android:textSize="14sp" />
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/categories_container" />
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/galaxies_category"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:background="@drawable/gradient_yellow"
-        android:gravity="center"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintTop_toTopOf="@+id/planets_category">
-
-        <androidx.appcompat.widget.AppCompatImageView
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/planets_rv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_galaxies" />
-
-        <androidx.appcompat.widget.AppCompatTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/galaxies"
-            android:textColor="@color/white"
-            android:textSize="14sp" />
-
-    </LinearLayout>
-
-    <androidx.appcompat.widget.AppCompatTextView
-        android:id="@+id/planets_subtitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="@string/planets"
-        android:textColor="@color/white"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/planets_category" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/planets_rv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/planets_subtitle"
-        tools:itemCount="3"
-        tools:listitem="@layout/small_planet_card" />
+            android:layout_marginTop="20dp"
+            android:clipToPadding="false"
+            android:paddingHorizontal="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/planets_subtitle"
+            tools:itemCount="3"
+            tools:listitem="@layout/small_planet_card" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
