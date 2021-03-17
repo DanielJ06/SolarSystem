@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:scrollbars="none"
     android:layout_height="match_parent"
     android:background="@color/black"
-    android:padding="20dp"
     tools:context=".ui.fragments.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/textView"
@@ -171,6 +176,7 @@
         app:layout_constraintTop_toBottomOf="@+id/planets_category" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/planets_rv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -179,4 +185,6 @@
         tools:itemCount="3"
         tools:listitem="@layout/small_planet_card" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
