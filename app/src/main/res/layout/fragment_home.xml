@@ -201,7 +201,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/planets_subtitle"
             tools:itemCount="3"
-            tools:listitem="@layout/small_planet_card" />
+            tools:listitem="@layout/small_card" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

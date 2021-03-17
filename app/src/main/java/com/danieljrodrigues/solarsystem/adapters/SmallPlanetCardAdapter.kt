@@ -1,10 +1,8 @@
 package com.danieljrodrigues.solarsystem.adapters
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.danieljrodrigues.solarsystem.R
 import com.danieljrodrigues.solarsystem.databinding.SmallPlanetCardBinding
 import com.danieljrodrigues.solarsystem.models.Card
 

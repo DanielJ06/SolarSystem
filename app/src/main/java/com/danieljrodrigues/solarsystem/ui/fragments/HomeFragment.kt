@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.danieljrodrigues.solarsystem.R
 import com.danieljrodrigues.solarsystem.adapters.SmallPlanetCardAdapter
 import com.danieljrodrigues.solarsystem.databinding.FragmentHomeBinding
 import com.danieljrodrigues.solarsystem.models.Card

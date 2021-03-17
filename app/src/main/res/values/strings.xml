@@ -28,4 +28,6 @@
     <string name="galaxies">Galáxias</string>
     <string name="planet">Planet</string>
     <string name="planets">Planetas</string>
+    <string name="mars_desc">Marte é o quarto planeta a partir do Sol, o segundo menor do Sistema Solar. Batizado em homenagem</string>
+    <string name="continue_reading">Continuar lendo</string>
 </resources>
